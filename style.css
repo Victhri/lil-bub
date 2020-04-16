@@ -14,6 +14,7 @@ body {
     width: 1030px;
     margin: 0 auto;
     padding: 0 25px;
+    box-sizing: border-box;
 }
 .header-container {
     display: grid;
@@ -87,6 +88,7 @@ body {
     background-size: 100%;
     background-position: center -40px;
     position: relative;
+    background-repeat: no-repeat;
 }
 .banner-cat {
     background-image: url(img/lilbub_ears.png),url(img/lilbub.png);
@@ -167,4 +169,57 @@ body {
         left: -10%;
         transform: translate(0,30px);
     }
+}
+.blog.container {
+    display: grid;
+    padding: 25px;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -24px;
+    
+}
+.last-news {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.info {
+    flex: 1 1 auto;
+    margin-right: 25px;
+}
+.preview {
+    flex: 0 0 310px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(img/square.png);
+    height: 310px;
+}
+.last-news h1 {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+}
+.last-news p{
+    font-size: 21px;
+    line-height: 30px;
+    margin-top: 21px;
+}
+.pink-btn { 
+    background-color: var(--pink);
+    padding: 3px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 2px 4px;
+    font-size: 10px;
+}
+.pink-btn:hover {
+    background-color: var(--green);
+}
+.preview .pink-btn {
+    margin: 0px 0px 10px 10px;
 }
