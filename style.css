@@ -334,3 +334,75 @@ ul.links {
     color: #6d6c6c;
 }
 
+@media (max-width: 1030px) {
+    .header-container {
+        grid-template-columns: 1fr;
+    }
+    .menu {
+        flex-direction: column;
+        margin-top: 10px;
+    }  
+    .home {
+        display: none;
+    }  
+    .social-links  {
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .menu a {
+        margin-right: 0;
+    }
+    .container {
+        width: 100%;
+    }
+    .social-links a:first-child img {
+        margin-left: 0;  
+    }
+    .banner-title {
+        display: none;
+    }
+    .banner-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .last-news {
+        flex-direction: column;
+    }
+    .preview {
+        order: -1;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-content: center;
+    }
+    .info {
+        margin-right: 0;
+        text-align: center;
+    }
+    .blog.container {
+        grid-template-columns: 1fr;
+        grid-template-rows: initial;
+    }
+    .full-banner,
+    .half-banner,
+    .one-third-banner {
+        grid-column: 1;
+        
+    }
+    .full-banner .overlay {
+        height: 50px;
+    }
+    .half-banner .overlay {
+        height: 125px;
+    }
+    .one-third-banner .overlay {
+        height: 200px;
+    }
+    .footer-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .copywrite {
+        order: 10;
+        grid-column: span 3;
+    }
+}
